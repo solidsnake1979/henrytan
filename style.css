@@ -1,0 +1,42 @@
+body{
+    float: left;
+    margin-left: 10%;
+    margin-right: 10%;
+  
+
+}
+a{
+    text-decoration:none;
+    
+    color: aliceblue;
+    font-size: 20px;
+    vertical-align:baseline;
+}
+a:hover{
+    color:aquamarine;
+}
+#nav1{
+    float:left;
+    width: 100%;
+    height: auto;
+    background-color:black;
+    
+}
+table{
+    text-align: left;
+    width: 20%;
+    height: 400px;
+    display: inline-block;
+    background-color: blue;
+    border:5px aquamarine;
+    border-spacing: 5px;
+}
+article{
+    width: 500px;
+}
+
+#Register{
+    text-align: center;
+    background-color:blueviolet;
+    border-radius: 8px;
+}
