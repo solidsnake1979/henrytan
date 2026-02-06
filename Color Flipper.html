@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Color Flipper</title>
+
+<style>
+
+
+</style>
+
+
+</head>
+
+<body>
+<h1>Color Flipper</h1>
+<p>Click on the buttons to change background color.</p>
+<button onclick="setColor('red')">Red</button>
+<button onclick="setColor('green')">Green</button>
+<button onclick="setColor('blue')">Blue</button>
+<button onclick="randomColor()">Random</button>
+
+<script>
+const body=document.getElementsByTagName("body")[0];
+
+function setColor(value){
+body.style.backgroundColor=value;
+
+}
+
+function randomColor(){
+
+const red=Math.floor(Math.random()*255)+1;
+const green=Math.floor(Math.random()*255)+1;
+const blue=Math.floor(Math.random()*255)+1;
+
+const color=`rgb(${red},${green},${blue})`;
+body.style.backgroundColor=color;
+
+}
+
+
+
+</script>
+
+</body>
+</html>
