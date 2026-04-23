@@ -60,7 +60,7 @@ const update = () => {
   level();
 };
 const level=()=>{
-  if(blockCount==0){
+  if(blockCount===0){
     score+=100*rows*cols;
     rows=Math.min(rows+1,maxRows);
     createBlocks();

@@ -32,7 +32,7 @@ movieSelect.addEventListener("change",e=>{
    
 })
 const saveData=()=>{
-    const selectedSeats=document.querySelectorAll(".row .seat.selected");
+   const selectedSeats=document.querySelectorAll(".row .seat.selected");
 
    const seatIndex=[...selectedSeats].map(seat=>[...seats].indexOf(seat));
 
