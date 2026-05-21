@@ -38,7 +38,7 @@
 
         gameStart = function () {
           document.addEventListener("keyup", changeDirection);
-
+          
           setInterval(update, 100);
 
           placeFood();
@@ -100,12 +100,10 @@
             ctx.fillRect(snakeBody[i][0], snakeBody[i][1], tileSize, tileSize);
           }
 
-          if (snakeX < 0||snakeX>WIDTH||snakeY<0||snakeY>HEIGHT) {
-            gameOver=true;
+          if (snakeX < 0 || snakeX > WIDTH || snakeY < 0 || snakeY > HEIGHT) {
+            gameOver = true;
             alert("Game Over");
           }
-            
-         
 
           for (let i = 0; i < snakeBody.length; i++) {
             if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {

@@ -68,7 +68,7 @@ const level=()=>{
 }  
 const reset=()=>{
 gameOver=false;
- ball = {
+  ball = {
   x: WIDTH / 2,
   y: HEIGHT / 2,
   radius: 7,
@@ -77,7 +77,7 @@ gameOver=false;
   color: "lightgreen",
 };
 
-player = {
+player = {  
   x: WIDTH / 2 - playerWidth / 2,
   y: HEIGHT - playerHeight - 10,
   width: playerWidth,
@@ -87,7 +87,7 @@ player = {
   color: "orange",
 };
 
-blockArray=[];
+let blockArray=[];
 score=0;
 rows=3;
 createBlocks();
@@ -110,7 +110,7 @@ const moveBall = () => {
     gameOver=true;
     ctx.fillStyle="white";
     ctx.font="18px Calabri";
-    ctx.fillText("Game Over :Press space to restart.",70,250)
+    ctx.fillText("Game Over ! Press space to restart.",70,200)
   }
 };
 
