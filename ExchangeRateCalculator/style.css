@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+}
+
+h1{
+    text-align: center;
+    color:limegreen;
+}
+p{
+    text-align:center;
+}
+.btn{
+    color:white;
+    background-color: limegreen;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    padding:5px 12px;
+    border:none;
+    width: 120px;
+    height: auto;
+
+
+}
+.btn:hover{
+    background-color: aqua;
+}
+.currency{
+    padding:40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency select{
+    padding:10px 20px;
+    border:2px solid rgba(0, 0, 0, 0.278);
+    background: transparent;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.currency input{
+    border:none;
+    background: transparent;
+    font-size: 30px;
+    text-align:right;
+
+}
+.swap-rate-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rate{
+    color:limegreen;
+    font: size 14px;
+    padding:0 10px;
+
+}
+
+select:focus,input:focus,button:focus{
+    outline:0;
+}
+.swap-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+@medis(max-width:600px){
+.currency input{
+    width:200px;
+}
+}
