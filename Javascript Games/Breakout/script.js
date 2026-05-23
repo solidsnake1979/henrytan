@@ -87,7 +87,7 @@ player = {
   color: "orange",
 };
 
-let blockArray=[];
+blockArray=[];
 score=0;
 rows=3;
 createBlocks();
