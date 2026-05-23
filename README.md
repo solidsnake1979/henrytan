@@ -1,2 +1,0 @@
-# henrytan
-learning to code
