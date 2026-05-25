@@ -42,7 +42,6 @@ button:hover{
 main{
     flex:1;
     padding:10px 20px;
-
 }
 h2{
     border-bottom: 1px solid black;
@@ -51,6 +50,14 @@ h2{
     justify-content: space-between;
     font-weight: bold;
     margin: 0;
+}
+h3{
+    border-top:1px solid black ;
+    padding-top: 10px;
+    display:flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin:0 0 20px;
 }
 .person{
     display:flex;

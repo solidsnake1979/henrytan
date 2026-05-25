@@ -13,6 +13,7 @@ const getRandomUser=async()=>{
     const res=await fetch("https://randomuser.me/api");
     const data=await res.json();
 
+
     const user=data.results[0];
 
     const newUser={
@@ -47,7 +48,7 @@ const calculateWealth=()=>{
         acc+=user.money),0);
 
     const wealthEl=document.createElement("div");
-    wealthEl.innerHTML=`<h3>Total Wealth: <strong>$${wealth.toFixed(2)}</strong></h3>`;
+    wealthEl.innerHTML=`<h3>Total Wealth:<strong>$${wealth.toFixed(2)}</strong></h3>`;
     main.appendChild(wealthEl);
 }
 
